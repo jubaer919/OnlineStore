@@ -1,0 +1,23 @@
+{
+  "name": "onlinestore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"shopify theme dev --port=9293 -e development\" \"npx @tailwindcss/cli -i ./src/styles/tailwind.input.css -o ./assets/tailwind.output.css --watch\"",
+    "build:css": "npx tailwindcss -i ./src/styles/tailwind.input.css -o ./assets/tailwind.output.css --minify",
+    "build:js": "vite build",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.6"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "greeting": {
+      "type": "greetings",
+      "settings": {}
+    }
+  },
+  "order": ["greeting"]
+}
