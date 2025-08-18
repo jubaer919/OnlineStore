@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: blue;
+  }
+}
